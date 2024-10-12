@@ -1,13 +1,8 @@
 import React from 'react';
-import Sidebar from './components/Sidebar';
+import HomePage from './pages/HomePage';
 
 const App: React.FC = () => {
-  return (
-    <div className="flex">
-      <Sidebar />
-      <div className="flex-1 p-10">Main Content Area</div>
-    </div>
-  );
+return <HomePage />;
 };
 
 export default App;

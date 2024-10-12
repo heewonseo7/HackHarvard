@@ -7,7 +7,7 @@ const Sidebar: React.FC = () => {
         {/* App Title Section */}
         <div className="flex items-center py-4 px-6">
             <i className="fas fa-home text-2xl"></i> {/* Reduced icon size */}
-            <span className="ml-3 font-bold text-xl">DermaDetection</span>
+            <span className="ml-3 font-bold text-xl">DermaDrill</span>
         </div>
 
         {/* Profile Section */}
@@ -24,7 +24,6 @@ const Sidebar: React.FC = () => {
         <div className="flex flex-col space-y-4 px-6">
             <NavItem icon="fas fa-home" label="Home" />
             <NavItem icon="fas fa-book" label="Study Board" />
-            <NavItem icon="fas fa-chart-line" label="Statistics" />
         </div>
         </div>
     );
@@ -37,7 +36,7 @@ interface NavItemProps {
 
 const NavItem: React.FC<NavItemProps> = ({ icon, label }) => {
     return (
-        <div className="flex items-center space-x-2 hover:bg-gray-200 hover:bg-opacity-20 transition py-2 px-4 rounded">
+        <div className="flex items space-x-2 hover:bg-gray-200 hover:bg-opacity-20 transition py-2 px-4 rounded">
         <i className={`${icon} text-lg`}></i> {/* Adjusted icon size */}
         <span>{label}</span>
         </div>
