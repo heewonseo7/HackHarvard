@@ -6,6 +6,7 @@ temp/
 backend/         # Ignore the backend directory
 \#/
 Linux/
+macOS/
 *.pyc
 *.pyo
 *.log
