@@ -1,57 +1,7 @@
-# Operating system files
-.DS_Store
-Thumbs.db
-ehthumbs.db
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.bak
-
-# IDE files
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
-
-# Node.js
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Python
+venv/
 __pycache__/
 *.pyc
 *.pyo
-.pytest_cache/
+*.log
+pytest_cache/
 .env
-.venv/
-
-# Ruby
-.bundle/
-log/
-tmp/
-
-# Java
-*.class
-target/
-
-# Environment variables
-.env
-
-# API keys
-config/secrets.yml
-
-# Compiled artifacts
-dist/
-build/
-
-# Miscellaneous
-coverage/
-docs/_build/
-test-results/
-*.sqlite
-*.db
-*~
