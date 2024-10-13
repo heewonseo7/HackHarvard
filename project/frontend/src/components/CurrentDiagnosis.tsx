@@ -1,13 +1,14 @@
+// CurrentDiagnosis.tsx
 import React from 'react';
 
 interface CurrentDiagnosisProps {
     imageSrc: string;
     diagnosis: string;
     reasoning: string;
-    onDiagnosisChange: (diagnosis: string) => void;
-    onReasoningChange: (reasoning: string) => void;
+    onDiagnosisChange: (value: string) => void;
+    onReasoningChange: (value: string) => void;
     onSubmit: () => void;
-    aiFeedback?: string;
+    aiFeedback: string;
 }
 
 const CurrentDiagnosis: React.FC<CurrentDiagnosisProps> = ({
@@ -20,37 +21,31 @@ const CurrentDiagnosis: React.FC<CurrentDiagnosisProps> = ({
     aiFeedback,
 }) => {
     return (
-        <div className="w-[65%] border border-gray-300 p-4 rounded-lg flex flex-col h-full justify-center items-center">
-            <h2 className="text-2xl font-bold mb-4">Current Diagnosis</h2>
-            <img
-                src={imageSrc}
-                alt="Skin Lesion"
-                className="w-[275px] h-[275px] object-cover mb-4 mx-auto"
-            />
-
+        <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-4 w-full max-w-md">
+            <h2 className="text-2xl font-bold mb-4">Current Diagnosis</h2> {/* Added title for the Current Diagnosis */}
+            {imageSrc && (
+                <img src={imageSrc} alt="Current Diagnosis" className="h-[275px] w-[275px] rounded-lg mb-4" />
+            )}
             <input
                 type="text"
                 value={diagnosis}
                 onChange={(e) => onDiagnosisChange(e.target.value)}
                 placeholder="Enter your diagnosis"
-                className="w-full border border-gray-300 rounded px-3 py-2 mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 w-full"
             />
-
             <textarea
                 value={reasoning}
                 onChange={(e) => onReasoningChange(e.target.value)}
-                placeholder="Enter your reasoning here"
-                className="w-full h-32 border border-gray-300 rounded px-3 py-2 mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your reasoning"
+                className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 w-full h-24"
             />
-
             <button
                 onClick={onSubmit}
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+                className="bg-blue-500 text-white rounded-md px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
             >
                 Submit Diagnosis
             </button>
-
-            {aiFeedback && <div className="mt-4">{aiFeedback}</div>}
+            {aiFeedback && <p className="mt-2 text-green-500">{aiFeedback}</p>}
         </div>
     );
 };
