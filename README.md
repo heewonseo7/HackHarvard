@@ -5,3 +5,9 @@ This app provides an interactive learning platform for medical students, focusin
 ---
 
 ![image](https://github.com/user-attachments/assets/5e635ab6-62b8-40a7-8bbc-28ec777d5b1c)
+
+# Inspiration
+
+The inspiration for this app arose from two key insights about medical education. 
+1. Medicine is inherently interdisciplinary. For example, in fields like dermatology, pattern recognition plays a vital role in diagnosis. Previous studies have shown that incorporating techniques from other fields, such as art analysis, can enhance these skills, highlighting the benefits of cross-disciplinary approaches. Additionally, with the rapid advancement of AI, which has its roots in pattern recognition, there is a tremendous opportunity to revolutionize medical training. 
+2. Second, traditional methods like textbooks and static images often lack the interactivity and personalized feedback needed to develop diagnostic skills effectively. Current education emphasizes the knowledge of various diagnostic features, but not the ability to recognize such features. This app was designed to address these gaps, creating a dynamic, tech-driven solution to better prepare medical students for the complexities of real-world practice.
