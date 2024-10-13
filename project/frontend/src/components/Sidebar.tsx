@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
-import image from '../assets/44.jpg';
+import image from '../assets/logo.jpeg';
 
 const Sidebar: React.FC = () => {
     return (
         <div className="h-screen bg-black text-white w-64">
             {/* App Title Section */}
-            <div className="flex items-center py-4 px-6">
-                <i className="fas fa-home text-2xl"></i> {/* Reduced icon size */}
-                <span className="ml-3 font-bold text-xl">DermaDrill</span>
+            <div className="flex items-center py-6 px-6">
+                <i className="ml-2 fas fa-spinner text-3xl"></i> {/* Reduced icon size */}
+                <span className="ml-3 font-bold text-3xl">DermaDrill</span>
             </div>
 
             {/* Profile Section */}
@@ -18,7 +18,7 @@ const Sidebar: React.FC = () => {
                     alt="Profile"
                     className="w-12 h-12 rounded-full mr-4"
                 />
-                <span className="text-lg font-semibold">Ndk Nguyen</span>
+                <span className="text-lg font-semibold">Tim Beaver</span>
             </div>
 
             {/* Navigation Items */}

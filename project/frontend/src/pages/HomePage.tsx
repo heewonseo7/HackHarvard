@@ -1,9 +1,9 @@
 import React from 'react';
+import HeroSection from '../components/HeroSection.tsx';
 
 const HomePage: React.FC = () => {
     return (
-        <div className="grid grid-cols-[200px_1fr] h-screen"> {/* Use grid for layout */}
-        </div>
+        <HeroSection />
     );
 };
 

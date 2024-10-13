@@ -31,21 +31,21 @@ const CurrentDiagnosis: React.FC<CurrentDiagnosisProps> = ({
                 value={diagnosis}
                 onChange={(e) => onDiagnosisChange(e.target.value)}
                 placeholder="Enter your diagnosis"
-                className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 w-full"
+                className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-teal-500 mb-2 w-full"
             />
             <textarea
                 value={reasoning}
                 onChange={(e) => onReasoningChange(e.target.value)}
                 placeholder="Enter your reasoning"
-                className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 w-full h-24"
+                className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-teal-500 mb-2 w-full h-24"
             />
             <button
                 onClick={onSubmit}
-                className="bg-blue-500 text-white rounded-md px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="bg-teal-500 text-white rounded-md px-4 py-2 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-400"
             >
                 Submit Diagnosis
             </button>
-            {aiFeedback && <p className="mt-2 text-green-500">{aiFeedback}</p>}
+            {aiFeedback && <p className="mt-2 text-blue-500">{aiFeedback}</p>}
         </div>
     );
 };
