@@ -1,29 +1,57 @@
-# Ignore the # directory
-\#/
-
-# Ignore the macOS directory
-macOS/
-
-# Ignore the virtual environment directory
-venv/
-
-# Node modules
-node_modules/
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
 
 # Logs
-npm-debug.log
-yarn-error.log
-
-# Environment variables
-.env
-
-# Build directories
-dist/
-build/
+*.log
 
 # Temporary files
 *.tmp
 *.bak
 
-# Large JSON files
-malignant_features.json
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.env
+.venv/
+
+# Ruby
+.bundle/
+log/
+tmp/
+
+# Java
+*.class
+target/
+
+# Environment variables
+.env
+
+# API keys
+config/secrets.yml
+
+# Compiled artifacts
+dist/
+build/
+
+# Miscellaneous
+coverage/
+docs/_build/
+test-results/
+*.sqlite
+*.db
+*~
