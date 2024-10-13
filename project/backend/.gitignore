@@ -1,17 +1,13 @@
-# Backend (Python, Flask, etc.)
 venv/
 __pycache__/
 logs/
 temp/
-backend/         # Ignore the backend directory
-\#/
-Linux/
-macOS/
+backend/      
+'#/'
+'macOS/'
+'Linux/'
 *.pyc
 *.pyo
 *.log
 pytest_cache/
 .env
-
-# Ignore specific file
-malignant_features.json
